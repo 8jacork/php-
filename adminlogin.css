@@ -1,0 +1,212 @@
+@charset "utf-8";
+/* CSS Document */
+html{ height: 100%; width: 100%;}
+* {
+	margin: 0;
+	padding: 0;
+}
+
+input.input-error:focus{background-color: transparent;}
+a{text-decoration:none;}
+#login_bg{background: url(images/login-bg.png) 0 0 repeat-x;
+	width: 100%;
+	height: 100%;
+	text-align:center;
+	}
+	
+.main {
+	min-height: 700px;
+	min-width: 1140px;
+	position: relative;
+	z-index: 999;
+	width: 100%;
+	height: 100%;
+	
+}
+
+.main1 {
+	min-height: 750px;
+	min-width: 1140px;
+	position: relative;
+	z-index: 999;
+	width: 100%;
+	height: 100%;
+	
+}
+.login-dom{ position:absolute; width:100%; margin-top:100px;}
+.login {
+	width:590px;
+	margin: 0 auto;
+	padding-top:30px;
+	
+}
+.logo-color{ color:#CCC;}
+.text-small{ font-size:16px;}
+.forget-pwd{float:left;}
+.forget-new{float:right;}
+
+.login-box {
+	width: 290px;
+	height: 82px;
+	border-radius: 8px;
+	-webkit-border-radius: 8px;
+	margin: 20px auto;
+	background-color: #dde6ea;
+	border: 2px solid #fff;
+	cursor: pointer;
+}
+.border {
+	width: 290px;
+	height: 155px;
+	border-radius: 8px;
+	-webkit-border-radius: 8px;
+	margin: 20px auto;
+	background-color: #dde6ea;
+	border: 2px solid #fff;
+	cursor: pointer;
+}
+.login-shadow {
+	box-shadow: 0px 0px 15px #000;
+	-moz-box-shadow: 0px 0px 15px #000;
+	-o-box-shadow: 0px 0px 15px #000;
+	-webkit-box-shadow: 0px 0px 15px #000;
+}
+
+
+.name {
+	width: 100%;
+	height: 40px;
+	border-radius: 8px;
+}
+
+.name input {
+	width: 90%;
+	height: 40px;
+	outline: none;
+	border: none;
+	background-color: transparent;
+	border-radius: 8px;
+	-webkit-border-radius: 8px;
+	margin-left: 5%;
+}
+
+input.input-error{
+	background-color: transparent;
+}
+
+.pwd {
+	width: 100%;
+	height: 40px;
+	border-radius: 8px;
+	-webkit-border-radius: 8px;
+}
+
+.pwd input {
+	width: 90%;
+	height: 40px;
+	outline: none;
+	border: none;
+	background-color: transparent;
+	border-radius: 8px;
+	-webkit-border-radius: 8px;
+	margin-left: 5%;
+}
+
+
+
+
+.btn {
+	display: block;
+	width: 300px;
+	height: 40px;
+	color: #c1c8d1;
+	background-color: #2a799f;
+	border-radius: 8px;
+	-webkit-border-radius: 8px;
+	margin: 30px auto;
+	line-height: 40px;
+	cursor: pointer;
+	border: 1px solid #598fab;
+}
+
+.btn:hover {
+	color: #fff;
+}
+
+.login-btn {
+	margin-top: 50px;
+	
+}
+
+
+
+.login-bg .forget {
+	width: 560px;
+	height: 100px;
+	overflow: hidden;
+}
+
+.forget {
+	background-image: url(images/forget.png);
+	margin: 40px auto;
+	height:70px;
+	
+}
+
+.forget-pwd {
+	color: #c1c8d1;
+	margin-left: 53px;
+	padding-top: 20px;
+	cursor: pointer;
+	font-size:12px;
+}
+
+.forget-pwd:hover {
+	text-decoration: underline;
+	color: #fff;
+}
+
+.forget-new:hover {
+	color: #fff;
+	text-decoration: underline;
+}
+
+.forget-new {
+	color: #c1c8d1;
+	padding-top: 20px;
+	margin-right: 53px;
+	cursor: pointer;
+	font-size:12px;
+}
+
+.footer {
+	width: 100%;
+	position: absolute;
+	bottom: 20px;
+	color: #c1c8d1;
+	font-size:10px;
+}
+.footer a{color: #c1c8d1;}
+.footer a:hover{color: #fff;text-decoration: underline;}
+
+.popupDom {
+	position: fixed;
+	top: -40px;
+	width: 100%;
+	text-align: center;
+}
+
+.popup {
+	width: 200px;
+	height: 40px;
+	line-height: 40px;
+	background-color: #2a799f;
+	border-radius: 0px 0px 4px 4px;
+	text-align: center;
+	margin: 0 auto;
+	border: 1px solid #598fab;
+	border-top: none;
+	color: #FFFFFF;
+}
+
+

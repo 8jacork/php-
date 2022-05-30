@@ -1,0 +1,56 @@
+@charset "utf-8";
+/* CSS Document */
+body{margin:0;}
+#box{width:100%; height:600px;}
+a{text-decoration:none; }
+li{list-style:none;}
+#header{width:100%; height:70px; background-color:#333; }
+.headli{ float:left;}
+
+.heada:link,.heada:visited{width:100px;height:70px;display:block;
+font-weight:bold;color: #FFF; background-color:#333  ;text-align:center;
+}
+.heada:hover,.heada:active{width:100px;height:70px;color: #FFF;font-weight:bold ;background-color: #666;}
+#quit{float:right;}
+#usern{float:right;}
+
+#shulan{width:13%;height:630px;background-color: #000; float:left; }
+.shuli{width:110px;height:40px;background-color: #000; float: left;}
+.shuli,a{color:#CCC;}
+
+
+#data{width:87%; height:600px; float:left;}
+
+.m1{text-align:center;}
+.a1{font-size:large;}
+
+
+.show_list{
+    
+	  width: 90px;
+}
+.show_list .move_list{
+	  
+    width: 90px;
+    background: #000;
+	float:left;
+}
+.show_list .move_list li{
+
+    padding: 10px 0;
+    width: 100px;
+    color: #fff;
+}
+.header_right ul a .show_list{
+   
+    border-right: none;
+}
+
+.header_right ul a:nth-child(3){
+    border-left: 1px solid #000;
+}
+.show_list .move_list li:hover{
+	
+    color: white;
+    background: orange;
+}
