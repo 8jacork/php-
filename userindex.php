@@ -24,16 +24,13 @@
 <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-  <?php 
-  session_start();
-  error_reporting(0);  ?>
 <!--[if lte IE 9]>
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
       <![endif]--> 
 
 <!-- Add your site or application content here --> 
 
-<!-- preloader start -->	
+<!-- preloader start -->
 <div id="preloader">
   <div class="preloader"> <span></span> <span></span> </div>
 </div>
@@ -82,39 +79,45 @@
       <div class="row align-items-center justify-content-center">
         <div class="col-xxl-12 col-xl-12 col-lg-12">
           <div class="topcontact-btn f-right d-none d-lg-block">
-            <div class="contact-btn"> <a href="login.php" class="top-btn"><?php 
-				if($_SESSION['name']){
-					echo($_SESSION['name']);
-				}else{
-					echo("欢迎加入我们");
-				}
-				?>
-				<i class="fal fa-chevron-double-right"></i></a> </div>
+            <div class="contact-btn"> <a href="contact.html" class="top-btn"><?php session_start();
+			echo $_SESSION['username'];
+			 ?><i class="fal fa-chevron-double-right"></i></a> </div>
           </div>
           <div class="menu-content">
-            <div class="top-logo d-lg-none"> <a href="index.html"><img src="assets/img/logo/logo.png" alt=""></a> </div>
+            <div class="top-logo d-lg-none"> <a href="userindex.php"><img src="assets/img/logo/logo.png" alt=""></a> </div>
             <div class="main-menu">
               <nav id="mobile-menu">
                 <ul>
-                  <li><a href="index.php" class="active">首页 </a></li>
-                  <li><a href="about.php">关于 </a></li>
-                  <li><a href="index.php">个性化 <i class="fal fa-plus dropdown-icon"></i></a>
+                  <li><a href="userindex.php" class="active">首页 </a></li>
+                  <li><a href="about.html">关于 </a></li>
+                  <li><a href="userindex.php">个性化 <i class="fal fa-plus dropdown-icon"></i></a>
                     <ul class="sub-menu">
-                      <li><a href="index.php">会员</a></li>
-                      <li><a href="index.php">个人定制</a></li>
+                      <li><a href="userindex.php">会员</a></li>
+                      <li><a href="userindex.php">个人定制</a></li>
                     </ul>
                   </li>
-                  <li><a href="car.php">购物车 <i class="fal fa-plus dropdown-icon"></i></a>
-                  <li><a href="shop.php">商品<i class="fal fa-plus dropdown-icon"></i></a> </li> 
+                  <li><a href="userindex.php">简介 <i class="fal fa-plus dropdown-icon"></i></a>
+                    <ul class="sub-menu">
+                      <li><a href="userindex.php">产品服务 </a></li>
+                      <li><a href="userindex.php">品牌</a></li> 
+                    </ul>
                   </li>
-                  <li><a href="protfolio.php">预约设备</a></li>
-                   <li><?php if($_SESSION['name']){echo("<a href='back.php'>退出系统</a>");}else{echo("<a href='protfolio.php'>简介</a>");};?>
-                   </li>
-                 </ul>
+                  <li><a href="shop.php">商品器材 <i class="fal fa-plus dropdown-icon"></i></a>
+                    
+                  </li>
+                  <li><a href="index.html">退出<i class="fal fa-plus dropdown-icon"></i></a>
+                    <ul class="sub-menu">
+                      <li><a href="login.html">重新登录</a></li>
+                       <li><a href= "../jianshenfang/adminlogin.php">管理员后台</a></li>
+                      <li><a href="registin.html">注册</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="protfolio.html">健身课程 </a></li>
+                </ul>
               </nav>
             </div>
             <div class="side-menu-icon d-lg-none text-end"> <a href="javascript:void(0)" class="info-toggle-btn f-right sidebar-toggle-btn"><i class="fal fa-bars"></i></a> </div>
-            <div class="header-action-btn f-right d-none d-lg-block"> <a href="javascript:void(0)" data-bs-toggle="modal" class="search" data-bs-target="#search-modal"><i class="far fa-search"></i></a> <a href="car.php"><i class="fas fa-shopping-basket"></i> <span>0</span> </a> </div>
+            <div class="header-action-btn f-right d-none d-lg-block"> <a href="javascript:void(0)" data-bs-toggle="modal" class="search" data-bs-target="#search-modal"><i class="far fa-search"></i></a> <a href="cart.html"><i class="fas fa-shopping-basket"></i> <span>0</span> </a> </div>
           </div>
         </div>
       </div>
@@ -130,7 +133,7 @@
       <button class="sidebar__close-btn" id="sidebar__close-btn"> <i class="fal fa-times"></i> </button>
     </div>
     <div class="sidebar__content">
-      <div class="sidebar__logo mb-40"> <a href="index.html"> <img src="assets/img/logo/logo.png" alt="logo"> </a> </div>
+      <div class="sidebar__logo mb-40"> <a href="userindex.php"> <img src="assets/img/logo/logo.png" alt="logo"> </a> </div>
       <div class="sidebar__search mb-25">
         <form action="#">
           <input type="text" placeholder="What are you searching for?">
@@ -508,7 +511,7 @@
               <span class="section-border mb-30"><i class="far fa-circle"></i></span> </div>
           </div>
           <div class="col-lg-6">
-            <div class="shop_button text-lg-end"><a href="shop.php" class="tp-btn-round">全部产品 <i class="fal fa-chevron-double-right"></i></a></div>
+            <div class="shop_button text-lg-end"><a href="shop.html" class="tp-btn-round">全部产品 <i class="fal fa-chevron-double-right"></i></a></div>
           </div>
         </div>
       </div>
